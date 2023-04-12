@@ -15,7 +15,7 @@ int registro() //função feita para cadastrar os usuários no banco de dados.
 	char genero[40];
 	char nacionalidade[40];
 	char cargo[40];
-	char telefone[40];
+	char celular[40];
 
 	printf("\t--- Registro de Usuários ---\n\n"); //menu da area de registro!
 	printf("\tDigite o CPF a ser cadastrado no sistema: ");
@@ -96,6 +96,13 @@ int registro() //função feita para cadastrar os usuários no banco de dados.
 	
 	file = fopen(arquivo, "a");
 	fprintf(file,", ");
+	fclose(file);
+	
+	printf("\tDigite o número de telefone a ser cadastrado: ");
+	scanf("%s",celular); //coletando a string de número de celular.
+	
+	file = fopen(arquivo, "a");
+	fprintf(file,celular);
 	fclose(file);
 	
 	system("pause");
