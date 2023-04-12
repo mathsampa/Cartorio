@@ -15,6 +15,7 @@ int registro() //função feita para cadastrar os usuários no banco de dados.
 	char genero[40];
 	char nacionalidade[40];
 	char cargo[40];
+	char telefone[40];
 
 	printf("\t--- Registro de Usuários ---\n\n"); //menu da area de registro!
 	printf("\tDigite o CPF a ser cadastrado no sistema: ");
@@ -28,7 +29,7 @@ int registro() //função feita para cadastrar os usuários no banco de dados.
 	fclose(file); //fecha o arquivo.
 	
 	file = fopen(arquivo, "a"); //atualiza o arquivo.
-	fprintf(file,","); //adiciona a virgula para maior facilidade de entendimento na hora da consulta.
+	fprintf(file,", "); //adiciona a virgula para maior facilidade de entendimento na hora da consulta.
 	fclose(file); //fechando o arquivo.
 	
 	printf("\tDigite o nome a ser cadastrado no sistema: ");
@@ -39,7 +40,7 @@ int registro() //função feita para cadastrar os usuários no banco de dados.
 	fclose(file);
 	
 	file = fopen(arquivo, "a");
-	fprintf(file,",");
+	fprintf(file,", ");
 	fclose(file);
 	
 	printf("\tDigite o sobrenome a ser cadastrado: ");
@@ -50,7 +51,7 @@ int registro() //função feita para cadastrar os usuários no banco de dados.
 	fclose(file);
 	
 	file = fopen(arquivo, "a");
-	fprintf(file,",");
+	fprintf(file,", ");
 	fclose(file);
 	
 	printf("\tDigite a Idade a ser cadastrada: ");
@@ -61,7 +62,7 @@ int registro() //função feita para cadastrar os usuários no banco de dados.
 	fclose(file);
 	
 	file = fopen(arquivo, "a");
-	fprintf(file,",");
+	fprintf(file,", ");
 	fclose(file);
 	
 	printf("\tDigite o Gênero a ser cadastrado: ");
@@ -72,7 +73,7 @@ int registro() //função feita para cadastrar os usuários no banco de dados.
 	fclose(file);
 	
 	file = fopen(arquivo, "a");
-	fprintf(file,",");
+	fprintf(file,", ");
 	fclose(file);
 	
 	printf("\tDigite a nacionalidade a ser cadastrada: ");
@@ -83,7 +84,7 @@ int registro() //função feita para cadastrar os usuários no banco de dados.
 	fclose(file);
 	
 	file = fopen(arquivo, "a");
-	fprintf(file,",");
+	fprintf(file,", ");
 	fclose(file);
 	
 	printf("\tDigite o cargo respectivo a ser cadastrado: ");
@@ -94,7 +95,7 @@ int registro() //função feita para cadastrar os usuários no banco de dados.
 	fclose(file);
 	
 	file = fopen(arquivo, "a");
-	fprintf(file,",");
+	fprintf(file,", ");
 	fclose(file);
 	
 	system("pause");
