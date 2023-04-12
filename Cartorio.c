@@ -175,7 +175,8 @@ int main() //função principal de todo o projeto, ou seja o menu principal
 	//opções para o usuário escolher.
 		printf("\t1 - Registrar Usuários!\n");
 		printf("\t2 - Consultar Usuários!\n");
-		printf("\t3 - Deletar Usuários!\n\n"); 
+		printf("\t3 - Deletar Usuários!\n"); 
+		printf("\t4 - Sair do Sistema!\n\n");
 		printf("Qual opção deseja acessar? : ");//fim do menu inicial
 
 	//o scanf é feito para scanear o que o usuário digita/coloca.
@@ -198,6 +199,11 @@ int main() //função principal de todo o projeto, ou seja o menu principal
 		case 3:
 		deletar(); //puxando a função de deletar.
 		break; // e voltando para se criar o loop.
+		
+		case 4:
+		printf("Obrigado por utilizar o sistema!!\n\n");
+		return 0;
+		break;
 		
 		default:
 		erro(); // puxando a nossa função de erro.
